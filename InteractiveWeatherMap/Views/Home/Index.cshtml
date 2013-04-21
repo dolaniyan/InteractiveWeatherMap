@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    ViewBag.Message = "Welcome to the interactive weather maps app!";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                This is an interactive website for kids to learn how to understand and read the weather patterns from NASA satelite imagery.
+
+
+                To learn more about how this site works visit
+                <a href="#" title="Help Page">our Help Page</a>.
+                There are helpful tutorials on the NOAA Educational website for other detailed tutorials of understanding satellite imagery.
+               
+            </p>
+        </div>
+    </section>
+}
+<h3>We suggest the following:</h3>
+
+<div style="float: left; width:128px; height:128px; margin-left:50px; text-align: center;"><img src="~/Images/CloudOvercast.png" />@Html.ActionLink("Weather Prediction", "WeatherPrediction", "Home")</div>
+<div style="float: left; width:128px; height:128px; margin-left:50px; text-align: center;"><img src="~/Images/Puzzles.png" />@Html.ActionLink("Map Puzzles", "MapPuzzles", "Home")</div>
+<div style="float: left; width:128px; height:128px; margin-left:50px; text-align: center;"><img src="~/Images/Link.png" />@Html.ActionLink("Tutorial", "About", "Home")</div>
+<div style="float: left; width:128px; height:128px; margin-left:50px; text-align: center;"><img src="~/Images/Help.png" />@Html.ActionLink("Help", "About", "Home")</div>

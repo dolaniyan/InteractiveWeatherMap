@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Weather Prediction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Weather Prediction</h2>
+
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        Study the map and clour key carefully to recognize temperature pattern.
+        <a href="#">Learn more…</a>
+    </li>
+
+    <li class="two">
+        <h5>Predict weather using the key provided</h5>
+        Click on a section of the map to predict the temperature at that point.
+        <a href="#">Learn more…</a>
+    </li>
+
+    <li class="three">
+        <h5>Compare your answers to the correct values...</h5>
+        Get scored and share your scores with your friends!
+        <a href="#">Learn more…</a>
+    </li>
+</ol>
+<div style="width: 720px; height: 480px; background-image: url('http://www.ssd.noaa.gov/goes/east/eaus/rb-l.jpg')">
+    <a><img style="left: 200px; top: 150px; position: relative;" src="~/Images/1.png" /></a>
+    <a> <img style="left: 500px; top: 250px; position: relative;" src="~/Images/2.png" /></a>
+    <a><img style="left: 100px; top: 200px; position: relative;" src="~/Images/3.png" /> </a>
+</div>
+<div>
+    <table style="float: left;">
+        <tr>
+            <td>
+                <img src="~/Images/icons2/1.png" /></td>
+            <td><input type="text" /></td>
+        </tr>
+         <tr>
+            <td>
+                <img src="~/Images/icons2/2.png" /></td>
+            <td><input type="text" /></td>
+        </tr>
+         <tr>
+            <td> <img src="~/Images/icons2/3.png" /></td>
+            <td><input type="text" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.ActionLink("Button Name", "ViewResult2", "Home", null, new { @class="imageButton2" }) </td>
+        </tr>
+    </table>
+   <!-- <img style="float: left; margin-left: 12px;" src="~/Images/submit2.png" /> -->
+    
+</div>
